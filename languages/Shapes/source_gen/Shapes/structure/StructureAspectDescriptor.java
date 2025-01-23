@@ -16,6 +16,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptCanvas = createDescriptorForCanvas();
   /*package*/ final ConceptDescriptor myConceptCircle = createDescriptorForCircle();
   /*package*/ final ConceptDescriptor myConceptColor = createDescriptorForColor();
+  /*package*/ final ConceptDescriptor myConceptColorReference = createDescriptorForColorReference();
   /*package*/ final ConceptDescriptor myConceptShape = createDescriptorForShape();
   /*package*/ final ConceptDescriptor myConceptSquare = createDescriptorForSquare();
   private final LanguageConceptSwitch myIndexSwitch;
@@ -32,7 +33,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptCanvas, myConceptCircle, myConceptColor, myConceptShape, myConceptSquare);
+    return Arrays.asList(myConceptCanvas, myConceptCircle, myConceptColor, myConceptColorReference, myConceptShape, myConceptSquare);
   }
 
   @Override
@@ -45,6 +46,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptCircle;
       case LanguageConceptSwitch.Color:
         return myConceptColor;
+      case LanguageConceptSwitch.ColorReference:
+        return myConceptColorReference;
       case LanguageConceptSwitch.Shape:
         return myConceptShape;
       case LanguageConceptSwitch.Square:
@@ -90,11 +93,20 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("color");
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForColorReference() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Shapes", "ColorReference", 0x34dddaff06a54a88L, 0x957364ae7932a56fL, 0x5d7251deed526e6fL);
+    b.class_(false, false, false);
+    b.origin("r:175835cc-8f7e-43b5-b678-5437b9b04f99(Shapes.structure)/6733534410778504815");
+    b.version(3);
+    b.associate("target", 0x5d7251deed526e70L).target(0x34dddaff06a54a88L, 0x957364ae7932a56fL, 0x5d7251deed512715L).optional(false).origin("6733534410778504816").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForShape() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Shapes", "Shape", 0x34dddaff06a54a88L, 0x957364ae7932a56fL, 0x5d7251deed5030f1L);
     b.class_(false, true, false);
     b.origin("r:175835cc-8f7e-43b5-b678-5437b9b04f99(Shapes.structure)/6733534410778358001");
     b.version(3);
+    b.aggregate("color", 0x5d7251deed526e89L).target(0x34dddaff06a54a88L, 0x957364ae7932a56fL, 0x5d7251deed526e6fL).optional(false).ordered(true).multiple(false).origin("6733534410778504841").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForSquare() {

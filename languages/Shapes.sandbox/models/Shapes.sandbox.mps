@@ -4,9 +4,14 @@
   <languages>
     <use id="34dddaff-06a5-4a88-9573-64ae7932a56f" name="Shapes" version="0" />
   </languages>
-  <imports />
+  <imports>
+    <import index="tfdj" ref="r:7f480c61-33d3-4a59-b5df-fc4089f1c26f(Shapes.colors)" implicit="true" />
+  </imports>
   <registry>
     <language id="34dddaff-06a5-4a88-9573-64ae7932a56f" name="Shapes">
+      <concept id="6733534410778504815" name="Shapes.structure.ColorReference" flags="ng" index="2K83YL">
+        <reference id="6733534410778504816" name="target" index="2K83YI" />
+      </concept>
       <concept id="6733534410778358017" name="Shapes.structure.Canvas" flags="ng" index="2K8A3v">
         <child id="6733534410778358019" name="shapes" index="2K8A3t" />
       </concept>
@@ -19,6 +24,9 @@
         <property id="6733534410778358008" name="radius" index="2K8A4A" />
         <property id="6733534410778358006" name="x" index="2K8A4C" />
         <property id="6733534410778358007" name="y" index="2K8A4D" />
+      </concept>
+      <concept id="6733534410778358001" name="Shapes.structure.Shape" flags="ng" index="2K8A4J">
+        <child id="6733534410778504841" name="color" index="2K83Xn" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -33,11 +41,17 @@
       <property role="2K8A4C" value="10" />
       <property role="2K8A4D" value="20" />
       <property role="2K8A4A" value="30" />
+      <node concept="2K83YL" id="5PMktVHkNE9" role="2K83Xn">
+        <ref role="2K83YI" to="tfdj:5PMktVHkpfr" resolve="blue" />
+      </node>
     </node>
     <node concept="2K8A4$" id="5PMktVHk3BU" role="2K8A3t">
       <property role="2K8A4_" value="100" />
       <property role="2K8A4y" value="200" />
       <property role="2K8A3u" value="50" />
+      <node concept="2K83YL" id="5PMktVHkNEa" role="2K83Xn">
+        <ref role="2K83YI" to="tfdj:5PMktVHkpfq" resolve="red" />
+      </node>
     </node>
   </node>
 </model>
