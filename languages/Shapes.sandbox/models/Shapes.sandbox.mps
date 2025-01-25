@@ -38,17 +38,17 @@
   <node concept="2K8A3v" id="5PMktVHk3BR">
     <property role="TrG5h" value="Lab1" />
     <node concept="2K8A4G" id="5PMktVHk3BS" role="2K8A3t">
-      <property role="2K8A4C" value="10" />
-      <property role="2K8A4D" value="20" />
-      <property role="2K8A4A" value="30" />
+      <property role="2K8A4C" value="200" />
+      <property role="2K8A4D" value="300" />
+      <property role="2K8A4A" value="150" />
       <node concept="2K83YL" id="5PMktVHkNE9" role="2K83Xn">
         <ref role="2K83YI" to="tfdj:5PMktVHkpfr" resolve="blue" />
       </node>
     </node>
     <node concept="2K8A4$" id="5PMktVHk3BU" role="2K8A3t">
-      <property role="2K8A4_" value="100" />
-      <property role="2K8A4y" value="200" />
-      <property role="2K8A3u" value="50" />
+      <property role="2K8A4_" value="50" />
+      <property role="2K8A4y" value="150" />
+      <property role="2K8A3u" value="100" />
       <node concept="2K83YL" id="5PMktVHkNEa" role="2K83Xn">
         <ref role="2K83YI" to="tfdj:5PMktVHkpfq" resolve="red" />
       </node>

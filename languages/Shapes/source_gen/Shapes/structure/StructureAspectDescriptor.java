@@ -29,6 +29,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   @Override
   public void reportDependencies(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.Dependencies deps) {
     deps.extendedLanguage(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, "jetbrains.mps.lang.core");
+    deps.extendedLanguage(0x4caf0310491e41f5L, 0x8a9b2006b3a94898L, "jetbrains.mps.execution.util");
   }
 
   @Override
@@ -66,6 +67,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Shapes", "Canvas", 0x34dddaff06a54a88L, 0x957364ae7932a56fL, 0x5d7251deed503101L);
     b.class_(false, false, true);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.parent(0x4caf0310491e41f5L, 0x8a9b2006b3a94898L, 0x40c1a7cb987d20d5L);
     b.origin("r:175835cc-8f7e-43b5-b678-5437b9b04f99(Shapes.structure)/6733534410778358017");
     b.version(3);
     b.aggregate("shapes", 0x5d7251deed503103L).target(0x34dddaff06a54a88L, 0x957364ae7932a56fL, 0x5d7251deed5030f1L).optional(true).ordered(true).multiple(true).origin("6733534410778358019").done();

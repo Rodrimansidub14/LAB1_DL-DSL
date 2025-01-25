@@ -131,7 +131,7 @@
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="3F2HdR" id="5PMktVHk3DC" role="3EZMnx">
-        <ref role="1NtTu8" to="hjo7:5PMktVHk343" />
+        <ref role="1NtTu8" to="hjo7:5PMktVHk343" resolve="shapes" />
         <node concept="2iRkQZ" id="5PMktVHk3DF" role="2czzBx" />
         <node concept="VPM3Z" id="5PMktVHk3DG" role="3F10Kt" />
         <node concept="pVoyu" id="5PMktVHk3DH" role="3F10Kt">
@@ -176,6 +176,48 @@
         <ref role="1NtTu8" to="hjo7:5PMktVHkAU9" resolve="color" />
       </node>
       <node concept="l2Vlx" id="5PMktVHkAUh" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4_bgI9hafA3">
+    <ref role="1XX52x" to="hjo7:4_bgI9hadOE" resolve="Triangle" />
+    <node concept="3EZMnI" id="4_bgI9hafCp" role="2wV5jI">
+      <node concept="3F0ifn" id="4_bgI9hafDD" role="3EZMnx">
+        <property role="3F0ifm" value="triangle" />
+      </node>
+      <node concept="3F0ifn" id="4_bgI9hafEc" role="3EZMnx">
+        <property role="3F0ifm" value="x1:" />
+      </node>
+      <node concept="3F0A7n" id="4_bgI9hafPZ" role="3EZMnx">
+        <ref role="1NtTu8" to="hjo7:4_bgI9hafHn" resolve="x1" />
+      </node>
+      <node concept="3F0ifn" id="4_bgI9hafQG" role="3EZMnx">
+        <property role="3F0ifm" value="y1:" />
+      </node>
+      <node concept="3F0A7n" id="4_bgI9hafRp" role="3EZMnx">
+        <ref role="1NtTu8" to="hjo7:4_bgI9hafM1" resolve="y1" />
+      </node>
+      <node concept="3F0ifn" id="4_bgI9hafRW" role="3EZMnx">
+        <property role="3F0ifm" value="x2:" />
+      </node>
+      <node concept="3F0A7n" id="4_bgI9hafSN" role="3EZMnx">
+        <ref role="1NtTu8" to="hjo7:4_bgI9hafMm" resolve="x2" />
+      </node>
+      <node concept="3F0ifn" id="4_bgI9hafTm" role="3EZMnx">
+        <property role="3F0ifm" value="y2:" />
+      </node>
+      <node concept="3F0A7n" id="4_bgI9hafU4" role="3EZMnx">
+        <ref role="1NtTu8" to="hjo7:4_bgI9hafMP" resolve="y2" />
+      </node>
+      <node concept="3F0ifn" id="4_bgI9hafVH" role="3EZMnx">
+        <property role="3F0ifm" value="x3:" />
+      </node>
+      <node concept="3F0A7n" id="4_bgI9hafWq" role="3EZMnx">
+        <ref role="1NtTu8" to="hjo7:4_bgI9hafND" resolve="x3" />
+      </node>
+      <node concept="PMmxH" id="4_bgI9hanv6" role="3EZMnx">
+        <ref role="PMmxG" node="5PMktVHkAUa" resolve="ShapeColor" />
+      </node>
+      <node concept="l2Vlx" id="4_bgI9hafCs" role="2iSdaV" />
     </node>
   </node>
 </model>
