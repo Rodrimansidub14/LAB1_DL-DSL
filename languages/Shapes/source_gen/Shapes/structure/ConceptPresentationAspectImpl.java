@@ -15,6 +15,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_ColorReference;
   private ConceptPresentation props_Shape;
   private ConceptPresentation props_Square;
+  private ConceptPresentation props_Triangle;
 
   @Override
   @Nullable
@@ -62,6 +63,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Square = cpb.create();
         }
         return props_Square;
+      case LanguageConceptSwitch.Triangle:
+        if (props_Triangle == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Triangle");
+          props_Triangle = cpb.create();
+        }
+        return props_Triangle;
     }
     return null;
   }

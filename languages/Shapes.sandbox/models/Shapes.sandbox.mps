@@ -9,6 +9,13 @@
   </imports>
   <registry>
     <language id="34dddaff-06a5-4a88-9573-64ae7932a56f" name="Shapes">
+      <concept id="5281388527813713194" name="Shapes.structure.Triangle" flags="ng" index="ooTZ8">
+        <property id="5281388527813720919" name="x1" index="ooVAP" />
+        <property id="5281388527813721321" name="x3" index="ooVSb" />
+        <property id="5281388527813721269" name="y2" index="ooVTn" />
+        <property id="5281388527813721217" name="y1" index="ooVTz" />
+        <property id="5281388527813721238" name="x2" index="ooVTO" />
+      </concept>
       <concept id="6733534410778504815" name="Shapes.structure.ColorReference" flags="ng" index="2K83YL">
         <reference id="6733534410778504816" name="target" index="2K83YI" />
       </concept>
@@ -39,8 +46,8 @@
     <property role="TrG5h" value="Lab1" />
     <node concept="2K8A4G" id="5PMktVHk3BS" role="2K8A3t">
       <property role="2K8A4C" value="200" />
-      <property role="2K8A4D" value="300" />
-      <property role="2K8A4A" value="150" />
+      <property role="2K8A4D" value="200" />
+      <property role="2K8A4A" value="50" />
       <node concept="2K83YL" id="5PMktVHkNE9" role="2K83Xn">
         <ref role="2K83YI" to="tfdj:5PMktVHkpfr" resolve="blue" />
       </node>
@@ -51,6 +58,16 @@
       <property role="2K8A3u" value="100" />
       <node concept="2K83YL" id="5PMktVHkNEa" role="2K83Xn">
         <ref role="2K83YI" to="tfdj:5PMktVHkpfq" resolve="red" />
+      </node>
+    </node>
+    <node concept="ooTZ8" id="4_bgI9hbmTe" role="2K8A3t">
+      <property role="ooVAP" value="150" />
+      <property role="ooVTz" value="150" />
+      <property role="ooVTO" value="50" />
+      <property role="ooVTn" value="50" />
+      <property role="ooVSb" value="200" />
+      <node concept="2K83YL" id="4_bgI9hbmTh" role="2K83Xn">
+        <ref role="2K83YI" to="tfdj:5PMktVHkpft" resolve="green" />
       </node>
     </node>
   </node>
